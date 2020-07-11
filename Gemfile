@@ -10,6 +10,8 @@ gem 'sqlite3', '~> 1.4'
 
 gem 'simple_form'
 
+gem 'devise'
+
 
 
 # Use Puma as the app server
