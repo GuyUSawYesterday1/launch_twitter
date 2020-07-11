@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 	def main_page
-		@mission_statement = "You are a bold one"
+		@mission_statement = "Hello there."
 	end
 end
 
