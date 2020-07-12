@@ -6,7 +6,9 @@ Last name: <%= @profile.last_name %> <br>
 age: <%= @profile.age %> <br>
 
 <ul class="list-group">
-	<% @profile.user.tweets.each do |tweet| %> <br>
-		<li class="list-group-item"><%= tweet.content %></li>
-	<% end %>	
+	<% if @profile.user.tweets.any? %>
+		<% @profile.user.tweets.each do |tweet| %> <br>
+			<li class="list-group-item"><%= tweet.content %></li>
+		<% end %>	
 </ul>
+<% end %>
